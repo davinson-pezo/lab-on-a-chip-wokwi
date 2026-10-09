@@ -1,0 +1,14 @@
+name: "Chromatographic Elution Run"
+version: 1
+steps:
+  - delay: 1000ms
+  - set-control:
+      part-id: btn_start
+      control: pressed
+      value: 1
+  - delay: 300ms
+  - set-control:
+      part-id: btn_start
+      control: pressed
+      value: 0
+  - wait-serial: "Press START to re-run"

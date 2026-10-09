@@ -11,6 +11,8 @@ venv/
 # Wokwi / compilación
 .wokwi/
 build/
+wokwi/build/
+tools/arduino-cli
 
 # Recortes y pruebas de imagen (scratch, no son material de clase)
 docs/test_crop_*.jpg
