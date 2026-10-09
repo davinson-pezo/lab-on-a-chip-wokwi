@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Wokwi / compilación
+.wokwi/
+build/
+
+# Recortes y pruebas de imagen (scratch, no son material de clase)
+docs/test_crop_*.jpg
+docs/researcher_crop_test.jpg
+
+# Editores
+.vscode/
+.idea/
+~$*

@@ -1,0 +1,13 @@
+{
+  "name": "flow-cell-detector",
+  "author": "Antigravity LOC Team",
+  "description": "Virtual chromatographic separation column and UV-Vis flow-cell detector producing Gaussian peaks, realistic noise and baseline drift.",
+  "pins": [
+    "VCC",
+    "GND",
+    "INJ",
+    "STEP",
+    "AOUT"
+  ],
+  "controls": []
+}

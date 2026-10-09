@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = "src/main.cpp"
+diagram = "diagram.json"
+
+[[chip]]
+name = "flow-cell-detector"
