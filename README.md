@@ -56,14 +56,14 @@ LOC/
 
 ## 🚀 Cómo Ejecutar la Simulación en Wokwi Web (3 Pasos)
 
-Todos los archivos que necesitas están organizados en la carpeta **[`wokwi/`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/)**:
+Todos los archivos que necesitas están organizados en la carpeta **[`wokwi/`](wokwi/)**:
 
 1. **Abre un nuevo proyecto:** Entra a [https://wokwi.com/projects/new/arduino-uno](https://wokwi.com/projects/new/arduino-uno).
-2. **Copia el Firmware:** Pega el contenido de [`wokwi/sketch.ino`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/sketch.ino) en la pestaña `sketch.ino`.
-3. **Copia el Diagrama:** Pega el contenido de [`wokwi/diagram.json`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/diagram.json) en la pestaña `diagram.json`.
+2. **Copia el Firmware:** Pega el contenido de [`wokwi/sketch.ino`](wokwi/sketch.ino) en la pestaña `sketch.ino`.
+3. **Copia el Diagrama:** Pega el contenido de [`wokwi/diagram.json`](wokwi/diagram.json) en la pestaña `diagram.json`.
 4. **Agrega el Custom Chip:**
-   - En Wokwi, haz clic en el botón `+` (nuevo archivo) y crea `flow-cell-detector.chip.json`, pegando el contenido de [`wokwi/flow-cell-detector.chip.json`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/flow-cell-detector.chip.json).
-   - Haz clic en `+` de nuevo, crea `flow-cell-detector.chip.c`, pegando el contenido de [`wokwi/flow-cell-detector.chip.c`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/flow-cell-detector.chip.c).
+   - En Wokwi, haz clic en el botón `+` (nuevo archivo) y crea `flow-cell-detector.chip.json`, pegando el contenido de [`wokwi/flow-cell-detector.chip.json`](wokwi/flow-cell-detector.chip.json).
+   - Haz clic en `+` de nuevo, crea `flow-cell-detector.chip.c`, pegando el contenido de [`wokwi/flow-cell-detector.chip.c`](wokwi/flow-cell-detector.chip.c).
 5. **Inicia la Simulación:** Pulsa el botón verde **Play** en Wokwi.
    - En la pantalla OLED verás: `INSTRUMENT READY - Press START [D2]`.
    - Haz clic en el pulsador verde **START**.
@@ -96,7 +96,7 @@ python3 tools/serial_plotter.py --mock
 
 ## 🎓 Metodología Pedagógica con Inteligencia Artificial
 
-Los alumnos deben consultar [docs/02_prompts_guide.md](file:///Users/davinson/Documents/Milton%20project/LOC/docs/02_prompts_guide.md) para trabajar en 5 fases secuenciales con Antigravity:
+Los alumnos deben consultar [docs/02_prompts_guide.md](docs/02_prompts_guide.md) para trabajar en 5 fases secuenciales con Antigravity:
 1. **Fase 1:** Construcción y ajuste del Custom Chip químico.
 2. **Fase 2:** Cableado y esquema de componentes en `diagram.json`.
 3. **Fase 3:** Máquina de estados no bloqueante y control de caudal.
@@ -121,10 +121,10 @@ A continuación se muestra el cromatograma obtenido a partir de la corrida exper
 
 ## 📣 Material de difusión
 
-Carteles de convocatoria de la clase (formato vertical *story*, 1080 × 1920):
+Carteles de convocatoria de la clase (formato vertical *story*, 1080 × 1920) disponibles en [`docs/diptico/`](docs/diptico/):
 
-<img src="docs/diptico_whatsapp_story_01.jpg" width="330" alt="Cartel de la clase LOC — portada">
-<img src="docs/diptico_whatsapp_story_02.jpg" width="330" alt="Cartel de la clase LOC — segunda cara">
+<img src="docs/diptico/diptico_whatsapp_story_01.jpg" width="330" alt="Cartel de la clase LOC — portada">
+<img src="docs/diptico/diptico_whatsapp_story_02.jpg" width="330" alt="Cartel de la clase LOC — segunda cara">
 
 ---
 

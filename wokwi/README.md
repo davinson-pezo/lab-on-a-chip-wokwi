@@ -20,12 +20,12 @@ Esta carpeta contiene **todos los archivos necesarios** para ejecutar el cromat�
 ## 🚀 Cómo Lanzar la Simulación en Wokwi Web (Paso a Paso)
 
 1. **Crear nuevo proyecto:** Entra a [https://wokwi.com/projects/new/arduino-uno](https://wokwi.com/projects/new/arduino-uno).
-2. **Pegar Firmware:** Abre la pestaña `sketch.ino` y reemplaza todo su contenido con el archivo [`sketch.ino`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/sketch.ino).
-3. **Pegar Circuito:** Ve a la pestaña `diagram.json` y reemplaza su contenido con el archivo [`diagram.json`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/diagram.json).
+2. **Pegar Firmware:** Abre la pestaña `sketch.ino` y reemplaza todo su contenido con el archivo [`sketch.ino`](sketch.ino).
+3. **Pegar Circuito:** Ve a la pestaña `diagram.json` y reemplaza su contenido con el archivo [`diagram.json`](diagram.json).
 4. **Agregar el Custom Chip Químico:**
    - Haz clic en la pestaña con el icono **`+`** (nuevo archivo).
-   - Escribe exactamente el nombre: `flow-cell-detector.chip.json` y pega el contenido de [`flow-cell-detector.chip.json`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/flow-cell-detector.chip.json).
-   - Haz clic otra vez en **`+`**, escribe el nombre: `flow-cell-detector.chip.c` y pega el contenido de [`flow-cell-detector.chip.c`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/flow-cell-detector.chip.c).
+   - Escribe exactamente el nombre: `flow-cell-detector.chip.json` y pega el contenido de [`flow-cell-detector.chip.json`](flow-cell-detector.chip.json).
+   - Haz clic otra vez en **`+`**, escribe el nombre: `flow-cell-detector.chip.c` y pega el contenido de [`flow-cell-detector.chip.c`](flow-cell-detector.chip.c).
 5. **Iniciar:** Pulsa el botón verde **Play (Iniciar Simulación)**.
 
 ---

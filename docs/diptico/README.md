@@ -7,7 +7,7 @@ Este directorio contiene las dos páginas del díptico informativo para la clase
 ## 🖼️ Páginas del Díptico
 
 ### 1. Página 1 (Story 1) - Portada Visual & Gancho
-* **Archivo:** [`diptico_whatsapp_story_01.jpg`](file:///Users/davinson/Documents/Milton%20project/LOC/docs/diptico/diptico_whatsapp_story_01.jpg)
+* **Archivo:** [`diptico_whatsapp_story_01.jpg`](diptico_whatsapp_story_01.jpg)
 * **Contenido:**
   * Fotografía real de laboratorio a sangre completa (*full-bleed*) mostrando al investigador cableando la protoboard junto a la placa Arduino Uno, la bomba de jeringa y el ordenador portátil.
   * Título de alto impacto: **LAB-ON-A-CHIP & MICRO-HPLC CON ARDUINO**.
@@ -16,7 +16,7 @@ Este directorio contiene las dos páginas del díptico informativo para la clase
   * Llamada a la acción: *¡Trae tu portátil! • Acceso libre en vivo*.
 
 ### 2. Página 2 (Story 2) - Agenda & Kit Maker de Amazon
-* **Archivo:** [`diptico_whatsapp_story_02.jpg`](file:///Users/davinson/Documents/Milton%20project/LOC/docs/diptico/diptico_whatsapp_story_02.jpg)
+* **Archivo:** [`diptico_whatsapp_story_02.jpg`](diptico_whatsapp_story_02.jpg)
 * **Contenido:**
   * Tipografía de gran tamaño y alto contraste, legible al instante en cualquier pantalla móvil.
   * **Agenda en 4 pasos (60 min):**
