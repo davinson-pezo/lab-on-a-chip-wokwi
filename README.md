@@ -33,10 +33,15 @@ LOC/
 │   ├── 02_prompts_guide.md                # Biblioteca de prompts estructurados por fases
 │   ├── 03_pedagogical_rubric.md           # Rúbrica de evaluación y competencias
 │   ├── 04_lab_manual.md                   # Guía de prácticas experimentales de laboratorio
-│   └── 05_presentation_slides.md          # Guión técnico de diapositivas (PowerPoint)
+│   ├── 05_presentation_slides.md          # Guión técnico de diapositivas (PowerPoint)
+│   ├── 06_estado_del_arte.md              # Contexto de microfluídica y HPLC de bajo coste
+│   └── 07_wokwi_cli_execution_report.md   # Informe de ejecución y validación con Wokwi CLI
 │
 ├── data/                                  # 📊 Registros experimentales
-│   └── chromatogram_run.csv               # Telemetría de elución real a 25 Hz
+│   ├── chromatogram_run.csv               # Telemetría de elución real a 25 Hz (corrida inicial)
+│   ├── wokwi_cli_run.log                  # Registro de telemetría completa de la API Wokwi
+│   ├── chromatogram_wokwi_cli_run.png     # Cromatograma en alta resolución con integración
+│   └── oled_wokwi_simulation.png          # Captura gráfica directa del display OLED SSD1306
 │
 ├── src/                                   # Código fuente modular (PlatformIO / C++)
 │   ├── config.h                           # Definición de pines y constantes analíticas
