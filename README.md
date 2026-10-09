@@ -1,5 +1,7 @@
 # Lab-on-a-Chip (LOC): Micro-Cromatógrafo & Sistema FIA Virtual
 
+![Lab-on-a-Chip con Arduino y Wokwi](docs/banner_repo.png)
+
 Sistema de instrumentación analítica virtual diseñado para la enseñanza de bioingeniería, química analítica e ingeniería de sistemas embebidos mediante **Arduino**, **Wokwi** y **Antigravity (IA)**.
 
 El proyecto rompe la limitación tradicional de "no hay analito real" en simuladores embebidos utilizando un **Custom Chip en C (compilado a WebAssembly)** que modela elución cromatográfica en columna, ruido instrumental estocástico y deriva de línea base.
@@ -109,6 +111,15 @@ A continuación se muestra el cromatograma obtenido a partir de la corrida exper
 - **Pico 1 (Teobromina):** $t_{R1} = 12.18\text{ s}$, Altura neta $H_1 = 1.785\text{ V}$, Área integrada $= 4.791\text{ V}\cdot\text{s}$, Platos teóricos $N_1 = 75$.
 - **Pico 2 (Cafeína):** $t_{R2} = 25.16\text{ s}$, Altura neta $H_2 = 2.405\text{ V}$, Área integrada $= 9.637\text{ V}\cdot\text{s}$, Platos teóricos $N_2 = 136$.
 - **Resolución cromatográfica:** $R_s = 1.83$ (Separación cuantitativa completa a línea base, $R_s \ge 1.5$).
+
+---
+
+## 📣 Material de difusión
+
+Carteles de convocatoria de la clase (formato vertical *story*, 1080 × 1920):
+
+<img src="docs/diptico_whatsapp_story_01.jpg" width="330" alt="Cartel de la clase LOC — portada">
+<img src="docs/diptico_whatsapp_story_02.jpg" width="330" alt="Cartel de la clase LOC — segunda cara">
 
 ---
 
