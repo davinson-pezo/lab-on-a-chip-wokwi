@@ -10,23 +10,22 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-DOCS_DIR = "docs"
+DOCS_DIR = os.path.join("docs", "diptico")
 os.makedirs(DOCS_DIR, exist_ok=True)
 
-# -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 # STORY 1: Portada Visual Full-Bleed con Investigador y Arduino
 # -------------------------------------------------------------------------
 def make_story_01():
     w_target, h_target = 1080, 1920
-    raw_path = os.path.join(DOCS_DIR, "researcher_crop_test.jpg")
-    if not os.path.exists(raw_path):
+    asset_path = os.path.join(DOCS_DIR, "assets", "researcher_bench.jpg")
+    if os.path.exists(asset_path):
+        src_im = Image.open(asset_path)
+    else:
         src_path = "/Users/davinson/.gemini/antigravity/brain/8e12afaf-961a-4d0d-80bb-55cf3f84969f/slide_problem_academic_1791532390375.jpg"
         src_im = Image.open(src_path)
-        raw_im = src_im.crop((690, 0, 1376, 768))
-        raw_im.save(raw_path, quality=95)
-    else:
-        raw_im = Image.open(raw_path)
+
+    raw_im = src_im.crop((690, 0, 1376, 768))
 
     scale = h_target / raw_im.height
     new_w = int(raw_im.width * scale)

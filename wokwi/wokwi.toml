@@ -1,6 +1,6 @@
 [wokwi]
 version = 1
-firmware = "src/main.cpp"
+firmware = "sketch.ino"
 diagram = "diagram.json"
 
 [[chip]]

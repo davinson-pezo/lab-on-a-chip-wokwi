@@ -12,54 +12,59 @@ El proyecto rompe la limitación tradicional de "no hay analito real" en simulad
 
 ```text
 LOC/
-├── docs/                                  # Documentación pedagógica y guías de prompts
+├── wokwi/                                 # 🧪 PROYECTO LISTO PARA WOKWI WEB / VS CODE
+│   ├── README.md                          # Guía rápida de 1 minuto para el alumno
+│   ├── sketch.ino                         # Firmware standalone para pegar en Wokwi
+│   ├── diagram.json                       # Esquema de conexiones y componentes visuales
+│   ├── libraries.txt                      # Dependencias automáticas (SSD1306, GFX)
+│   ├── flow-cell-detector.chip.c          # Custom Chip en C (elución física y ruido)
+│   ├── flow-cell-detector.chip.json       # Definición de pines y metadatos del chip
+│   └── wokwi.toml                         # Configuración para la extensión de VS Code
+│
+├── docs/                                  # 📚 Documentación pedagógica y material gráfico
+│   ├── diptico/                           # 📱 Díptico para WhatsApp / Instagram Stories (9:16)
+│   │   ├── diptico_whatsapp_story_01.jpg  # Página 1: Portada visual con investigador y Arduino
+│   │   ├── diptico_whatsapp_story_02.jpg  # Página 2: Agenda de la clase y Kit Amazon (< 80 €)
+│   │   └── README.md                      # Especificaciones del díptico y difusión
+│   ├── slides/                            # Diapositivas gráficas académicas 16:9 (01 a 12)
+│   ├── presentacion_loc_wokwi_antigravity.pptx # Presentación PowerPoint 16:9 con notas
 │   ├── 00_project_overview.md             # Fundamentos fisicoquímicos y conceptos analíticos
 │   ├── 01_system_architecture.md          # Arquitectura de hardware, pinout y DSP
 │   ├── 02_prompts_guide.md                # Biblioteca de prompts estructurados por fases
 │   ├── 03_pedagogical_rubric.md           # Rúbrica de evaluación y competencias
 │   ├── 04_lab_manual.md                   # Guía de prácticas experimentales de laboratorio
-│   ├── 05_presentation_slides.md          # Guión técnico de diapositivas (PowerPoint)
-│   ├── presentacion_loc_wokwi_antigravity.pptx # Presentación PowerPoint 16:9 con notas
-│   └── slides/                            # Diapositivas gráficas en resolución 16:9 (01 a 12)
+│   └── 05_presentation_slides.md          # Guión técnico de diapositivas (PowerPoint)
 │
-├── chips/                                 # Custom Chips de Wokwi (Emulador Químico)
-│   └── flow_cell_detector/
-│       ├── chip.json                      # Metadatos y definición de pines del chip
-│       └── chip.c                         # Código C con la ecuación física de elución y ruido
+├── data/                                  # 📊 Registros experimentales
+│   └── chromatogram_run.csv               # Telemetría de elución real a 25 Hz
 │
 ├── src/                                   # Código fuente modular (PlatformIO / C++)
 │   ├── config.h                           # Definición de pines y constantes analíticas
 │   └── main.cpp                           # Firmware con FSM, filtrado EMA e integración
 │
-├── tools/                                 # Herramientas de visualización científica
-│   └── serial_plotter.py                  # Graficador en vivo en Python (Matplotlib/PySerial)
+├── tools/                                 # Scripts de automatización y DSP en Python
+│   ├── serial_plotter.py                  # Graficador en vivo en Python (Matplotlib/PySerial)
+│   ├── plot_run.py                        # Generador de curvas cromatográficas con métricas
+│   ├── generate_academic_slides.py        # Generador de diapositivas 16:9
+│   ├── build_presentation.py              # Ensamblador de PowerPoint (.pptx)
+│   └── generate_diptico_stories.py        # Generador del díptico de WhatsApp Stories
 │
-├── sketch.ino                             # Sketch standalone para Wokwi Web
-├── diagram.json                           # Esquema de conexiones visual para Wokwi
-├── libraries.txt                          # Dependencias de Arduino para Wokwi Web
-├── wokwi.toml                             # Configuración del simulador Wokwi
 └── README.md                              # Este documento
 ```
 
 ---
 
-## 🚀 Cómo Ejecutar la Simulación en Wokwi Web
+## 🚀 Cómo Ejecutar la Simulación en Wokwi Web (3 Pasos)
 
-1. **Abre tu proyecto en Wokwi:**
-   Entra a [https://wokwi.com/projects/new/arduino-uno](https://wokwi.com/projects/new/arduino-uno).
+Todos los archivos que necesitas están organizados en la carpeta **[`wokwi/`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/)**:
 
-2. **Copia el Firmware:**
-   Pega el contenido de `sketch.ino` en la pestaña `sketch.ino` de Wokwi.
-
-3. **Copia el Diagrama de Hardware:**
-   Ve a la pestaña `diagram.json` en Wokwi y reemplaza su contenido con el archivo [diagram.json](file:///Users/davinson/Documents/Milton%20project/LOC/diagram.json).
-
+1. **Abre un nuevo proyecto:** Entra a [https://wokwi.com/projects/new/arduino-uno](https://wokwi.com/projects/new/arduino-uno).
+2. **Copia el Firmware:** Pega el contenido de [`wokwi/sketch.ino`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/sketch.ino) en la pestaña `sketch.ino`.
+3. **Copia el Diagrama:** Pega el contenido de [`wokwi/diagram.json`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/diagram.json) en la pestaña `diagram.json`.
 4. **Agrega el Custom Chip:**
-   - En Wokwi, haz clic en el botón de agregar archivo (`+`) y crea `flow-cell-detector.chip.json`, pegando el contenido de [chip.json](file:///Users/davinson/Documents/Milton%20project/LOC/chips/flow_cell_detector/chip.json).
-   - Crea otro archivo llamado `flow-cell-detector.chip.c`, pegando el contenido de [chip.c](file:///Users/davinson/Documents/Milton%20project/LOC/chips/flow_cell_detector/chip.c).
-
-5. **Inicia la Simulación:**
-   - Pulsa el botón verde **Play** en Wokwi.
+   - En Wokwi, haz clic en el botón `+` (nuevo archivo) y crea `flow-cell-detector.chip.json`, pegando el contenido de [`wokwi/flow-cell-detector.chip.json`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/flow-cell-detector.chip.json).
+   - Haz clic en `+` de nuevo, crea `flow-cell-detector.chip.c`, pegando el contenido de [`wokwi/flow-cell-detector.chip.c`](file:///Users/davinson/Documents/Milton%20project/LOC/wokwi/flow-cell-detector.chip.c).
+5. **Inicia la Simulación:** Pulsa el botón verde **Play** en Wokwi.
    - En la pantalla OLED verás: `INSTRUMENT READY - Press START [D2]`.
    - Haz clic en el pulsador verde **START**.
    - Observa cómo:
